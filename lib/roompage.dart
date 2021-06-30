@@ -20,7 +20,7 @@ class _RoomPageState extends State<RoomPage> {
             height: 220,
             width: 450,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.indigo[500],
               borderRadius: BorderRadius.circular(25),
             ),
             child: Column(
@@ -42,11 +42,17 @@ class _RoomPageState extends State<RoomPage> {
                       child: TextField(
                         obscureText: true,
                         decoration: InputDecoration(
-                            focusColor: Colors.grey,
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            labelText: "Type a thought here..."),
+                          hintText: "Type a thought here..",
+                          hintStyle: TextStyle(
+                            color: Colors.white54,
+                          ),
+                          focusColor: Colors.grey,
+
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          // labelText: "Type a thought here..."
+                        ),
                       ),
                     ),
                     SizedBox(
